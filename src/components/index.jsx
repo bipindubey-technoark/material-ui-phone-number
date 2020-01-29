@@ -858,7 +858,7 @@ class MaterialUiPhoneNumber extends React.Component {
                 </>
               ) : (
                 <>
-                  <button
+                  <div
                     // className={classes.flagButton}
                     style={{
                       padding: 0,
@@ -871,7 +871,7 @@ class MaterialUiPhoneNumber extends React.Component {
                     aria-haspopup
                   >
                     <div className={inputFlagClasses} />
-                  </button>
+                  </div>
 
                   <Menu
                     className={dropdownClass}
