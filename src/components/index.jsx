@@ -1,4 +1,3 @@
-import Button from "@material-ui/core/Button";
 import Divider from "@material-ui/core/Divider";
 import InputAdornment from "@material-ui/core/InputAdornment";
 import Menu from "@material-ui/core/Menu";
@@ -858,7 +857,7 @@ class MaterialUiPhoneNumber extends React.Component {
                 </>
               ) : (
                 <>
-                  <Button
+                  <a
                     className={classes.flagButton}
                     style={{ minWidth: "30px" }}
                     aria-owns={anchorEl ? "country-menu" : null}
@@ -867,7 +866,7 @@ class MaterialUiPhoneNumber extends React.Component {
                     aria-haspopup
                   >
                     <div className={inputFlagClasses} />
-                  </Button>
+                  </a>
 
                   <Menu
                     className={dropdownClass}
