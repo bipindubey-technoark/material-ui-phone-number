@@ -858,20 +858,15 @@ class MaterialUiPhoneNumber extends React.Component {
                 </>
               ) : (
                 <>
-                  <div
-                    // className={classes.flagButton}
-                    style={{
-                      padding: 0,
-                      height: 30,
-                      minWidth: "30px!important"
-                    }}
+                  <button
+                    className={classes.flagButton}               
                     aria-owns={anchorEl ? "country-menu" : null}
                     aria-label="Select country"
                     onClick={e => this.setState({ anchorEl: e.currentTarget })}
                     aria-haspopup
                   >
                     <div className={inputFlagClasses} />
-                  </div>
+                  </button>
 
                   <Menu
                     className={dropdownClass}
