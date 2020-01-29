@@ -859,7 +859,7 @@ class MaterialUiPhoneNumber extends React.Component {
               ) : (
                 <>
                   <button
-                    className={classes.flagButton}               
+                    className={classes.flagButton}
                     aria-owns={anchorEl ? "country-menu" : null}
                     aria-label="Select country"
                     onClick={e => this.setState({ anchorEl: e.currentTarget })}
@@ -870,6 +870,7 @@ class MaterialUiPhoneNumber extends React.Component {
 
                   <Menu
                     className={dropdownClass}
+                    style={{ top: "10%", left: "45%" }}
                     id="country-menu"
                     anchorEl={anchorEl}
                     open={Boolean(anchorEl)}
