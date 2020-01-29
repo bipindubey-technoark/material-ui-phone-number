@@ -32,9 +32,7 @@ const styles = () => ({
   flagButton: {
     minWidth: "30px!important",
     padding: 0,
-    height: 30,
-    marginRight: -40,
-    marginLeft: -40
+    height: 30
   },
   native: {
     width: 30,
@@ -820,6 +818,7 @@ class MaterialUiPhoneNumber extends React.Component {
                       select: classes.nativeSelect
                     }}
                     onChange={e => this.handleFlagItemClick(e.target.value)}
+                    style={{ top: "10%", left: "45%" }}
                     disableUnderline
                   >
                     {!!preferredCountries.length &&
@@ -870,7 +869,6 @@ class MaterialUiPhoneNumber extends React.Component {
 
                   <Menu
                     className={dropdownClass}
-                    style={{ top: "10%", left: "45%" }}
                     id="country-menu"
                     anchorEl={anchorEl}
                     open={Boolean(anchorEl)}
