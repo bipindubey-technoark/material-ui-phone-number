@@ -33,7 +33,9 @@ const styles = () => ({
     minWidth: "30px!important",
     width: "40px!important",
     padding: 0,
-    height: 30
+    height: 30,
+    marginRight: -40,
+    marginLeft: -40
   },
   native: {
     width: 30,
@@ -857,7 +859,7 @@ class MaterialUiPhoneNumber extends React.Component {
                 </>
               ) : (
                 <>
-                  <a
+                  <button
                     className={classes.flagButton}
                     style={{ minWidth: "30px" }}
                     aria-owns={anchorEl ? "country-menu" : null}
@@ -866,7 +868,7 @@ class MaterialUiPhoneNumber extends React.Component {
                     aria-haspopup
                   >
                     <div className={inputFlagClasses} />
-                  </a>
+                  </button>
 
                   <Menu
                     className={dropdownClass}
