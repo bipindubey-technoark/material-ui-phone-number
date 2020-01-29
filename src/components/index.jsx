@@ -19,7 +19,8 @@ import '../flags.png';
 
 const styles = () => ({
   flagButton: {
-    minWidth: 30,
+    minWidth: '30px!important',
+    width:'40px!important',
     padding: 0,
     height: 30,
   },
