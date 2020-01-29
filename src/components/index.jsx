@@ -859,7 +859,12 @@ class MaterialUiPhoneNumber extends React.Component {
               ) : (
                 <>
                   <button
-                    className={classes.flagButton}
+                    // className={classes.flagButton}
+                    style={{
+                      padding: 0,
+                      height: 30,
+                      minWidth: "30px!important"
+                    }}
                     aria-owns={anchorEl ? "country-menu" : null}
                     aria-label="Select country"
                     onClick={e => this.setState({ anchorEl: e.currentTarget })}
