@@ -31,7 +31,6 @@ import Item from "./Item";
 const styles = () => ({
   flagButton: {
     minWidth: "30px!important",
-    width: "40px!important",
     padding: 0,
     height: 30,
     marginRight: -40,
@@ -861,7 +860,6 @@ class MaterialUiPhoneNumber extends React.Component {
                 <>
                   <button
                     className={classes.flagButton}
-                    style={{ minWidth: "30px" }}
                     aria-owns={anchorEl ? "country-menu" : null}
                     aria-label="Select country"
                     onClick={e => this.setState({ anchorEl: e.currentTarget })}
